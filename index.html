@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Ascendants | Official Website</title>
+    <meta name="description"
+        content="Official website for Anime Ascendants – the ultimate Anime Tower Defense experience on Roblox. Collect units, level up, and defend!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/AnimeAscendantsText.png" alt="Anime Ascendants Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#changelog">Changelog</a>
+                    <a href="https://www.roblox.com/games/15601725874/Anime-Ascendants" target="_blank"
+                        class="play-nav">Play Now</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section id="home" class="page-section active">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1>Step into Anime Ascendants: <span>Bloody Winter</span></h1>
+                        <p class="hero-desc">
+                            Welcome to Anime Ascendants – an Anime Tower Defense game! ⭐<br><br>
+                            Join our community below!<br><br>
+                            - Formerly Special Anime Defense 💔
+                        </p>
+                        <div class="hero-btns">
+                            <a href="https://www.roblox.com/games/15601725874/Anime-Ascendants" target="_blank"
+                                class="btn btn-primary">
+                                <i data-lucide="play"></i> Play Now
+                            </a>
+                            <a href="#changelog" class="btn btn-secondary" onclick="navigateTo('changelog')">
+                                <i data-lucide="scroll-text"></i> Changelog
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="changelog" class="page-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Game <span>Updates</span></h2>
+                        <p>Stay updated with the latest changes to Anime Ascendants.</p>
+                    </div>
+
+                    <div class="updates-grid">
+                        <div class="update-card" id="update-1">
+                            <div class="update-banner">
+                                <img src="images/update1image.png" alt="Update 1 Banner">
+                                <div class="update-badge">Update 1</div>
+                            </div>
+                            <div class="update-info">
+                                <h3>Bloody Winter</h3>
+                                <p>Major balance adjustments and new units. Discover what awaits in our first major
+                                    update.</p>
+                                <button class="btn btn-open" onclick="openUpdate('update-1')">
+                                    Open Update <i data-lucide="chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="update-details" class="page-section">
+                <div class="container">
+                    <button class="btn-back" onclick="navigateTo('changelog')">
+                        <i data-lucide="arrow-left"></i> Back to Changelog
+                    </button>
+
+                    <div class="update-detail-header">
+                        <img src="images/update1image.png" alt="Update 1 Banner" class="detail-banner">
+                        <div class="header-overlay">
+                            <h1>Update 1: <span>Bloody Winter</span></h1>
+                            <p>Winter has arrived in Anime Ascendants. Discover new units, systems, and the
+                                Winter Village.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-grid">
+                        <div class="detail-column">
+                            <div class="detail-card">
+                                <h2><i data-lucide="users"></i> New Units</h2>
+                                <div class="units-list">
+                                    <div class="unit-item">
+                                        <img src="images/Update1/Units/Doma.jpg" alt="Doma">
+                                        <div class="unit-text">
+                                            <h4>Doma</h4>
+                                            <span>Secret Portal Drop + Questline</span>
+                                        </div>
+                                    </div>
+                                    <div class="unit-item">
+                                        <img src="images/Update1/Units/Esdeth.jpg" alt="Esdeth">
+                                        <div class="unit-text">
+                                            <h4>Esdeth</h4>
+                                            <span>Capsule Secret</span>
+                                        </div>
+                                    </div>
+                                    <div class="unit-item">
+                                        <img src="images/Update1/Units/Assassin.jpg" alt="Assassin">
+                                        <div class="unit-text">
+                                            <h4>Assassin</h4>
+                                            <span>Secret Questline</span>
+                                        </div>
+                                    </div>
+                                    <div class="unit-item">
+                                        <img src="images/Update1/Units/Ice Admiral.jpg" alt="Ice Admiral">
+                                        <div class="unit-text">
+                                            <h4>Ice Admiral</h4>
+                                            <span>Capsule Mythic</span>
+                                        </div>
+                                    </div>
+                                    <div class="unit-item">
+                                        <img src="images/Update1/Units/Toshin.jpg" alt="Toshin">
+                                        <div class="unit-text">
+                                            <h4>Toshin</h4>
+                                            <span>Capsule Mythic</span>
+                                        </div>
+                                    </div>
+                                    <div class="unit-item">
+                                        <img src="images/Update1/Units/Charmi.jpg" alt="Charmi">
+                                        <div class="unit-text">
+                                            <h4>Charmi</h4>
+                                            <span>Capsule Exclusive</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail-card">
+                                <h2><i data-lucide="map"></i> New Content</h2>
+                                <div class="content-item thumb">
+                                    <img src="images/Update1/Other/SnowVillage.png" alt="Snow Village"
+                                        class="content-thumb">
+                                    <div class="content-text">
+                                        <h3>Winter Village Story Mode</h3>
+                                        <p>Jump into the difficult winter village stage and fight against fierce demonic
+                                            enemies ⚔️</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail-card">
+                                <h2><i data-lucide="sparkles"></i> World & Visuals</h2>
+                                <div class="visual-items">
+                                    <div class="visual-item">
+                                        <img src="images/Update1/Other/LobbyNewWinter.png" alt="Winter Lobby">
+                                        <p>New Winter Lobby</p>
+                                    </div>
+                                    <div class="visual-item">
+                                        <img src="images/Update1/Other/GojoAbility.png" alt="Gojo Ability">
+                                        <p>New Gojo Ability Added</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-column">
+                            <div class="detail-card">
+                                <h2><i data-lucide="settings"></i> Systems & QoL</h2>
+                                <ul class="features-list">
+                                    <li>Shiny Transfer System</li>
+                                    <li>Drag Click to Sell</li>
+                                    <li>Lag Fixes & FPS Drops</li>
+                                    <li>50x Summon Feature</li>
+                                    <li>Auto Reroll System</li>
+                                    <li>Challenge System Rework</li>
+                                    <li>Item View UI Rework</li>
+                                    <li>Wave Tracker UI Rework</li>
+                                    <li>Upgrade UI Rework</li>
+                                    <li>Passive UI Rework</li>
+                                    <li>Inventory Space Purchase</li>
+                                </ul>
+                            </div>
+
+                            <div class="detail-card">
+                                <h2><i data-lucide="gift"></i> Features & Rewards</h2>
+                                <ul class="features-list">
+                                    <li>Winter Event NPC</li>
+                                    <li>Portals (10 Tiers + 1 Ascendant Tier)</li>
+                                    <li>Card Mechanics</li>
+                                    <li>Openable Capsules</li>
+                                    <li>Secret Questline System</li>
+                                    <li>Ascendant Trial</li>
+                                    <li>Winter Daily Rewards</li>
+                                    <li>+50 Battlepass Tiers</li>
+                                    <li>Subzero Title (Winter Shop)</li>
+                                    <li>UPPERMOON Title (Ascendant Trial)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Anime Ascendants. Formerly Special Anime Defense 💔</p>
+            <p>Not affiliated with Roblox Corporation.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
