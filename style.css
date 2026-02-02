@@ -589,6 +589,13 @@ footer p {
     color: var(--text-dim);
 }
 
+.click-indicator {
+    font-size: 0.75rem;
+    color: var(--primary);
+    margin-top: 0.3rem;
+    font-weight: 600;
+}
+
 .features-list {
     list-style: none;
 }
